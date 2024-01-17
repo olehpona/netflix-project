@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "tailwind": "tailwind -i ./src/styles.css -o ./assets/main.css --watch"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.1.1",
+    "nuxt": "^3.9.1",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.4.10",
+    "vue-router": "^4.2.5"
+  }
+}
