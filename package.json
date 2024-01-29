@@ -12,9 +12,12 @@
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.1",
-    "nuxt": "^3.9.1",
+    "nuxt": "^3.9.3",
     "tailwindcss": "^3.4.1",
-    "vue": "^3.4.10",
+    "vue": "^3.4.15",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@vueform/nuxt": "^1.4.0"
   }
 }
