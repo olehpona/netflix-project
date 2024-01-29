@@ -3,7 +3,7 @@ const props = defineProps({
     title: String
 })
 
-const isOpen = useState("isOpen", () => false)
+const isOpen = ref(false)
 
 
 function changeOpen() {
@@ -17,7 +17,7 @@ function changeOpen() {
         <div class="w-full bg-[#221F1F] select-none mb-2 rounded-lg p-1" @click="() => changeOpen()">
             <p class="text-white text-2xl">{{ title }}</p>
         </div>
-        <div :class="[isOpen ? 'h-fit' : 'h-0']">
+        <div :class="[isOpen ? 'h-fit' : 'hidden']">
             <slot></slot>
         </div>
 

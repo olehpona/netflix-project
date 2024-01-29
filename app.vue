@@ -1,5 +1,5 @@
 <style>
-@import url("~/assets/main.css");
+@import url("~/src/styles.css");
 </style>
 
 <template>

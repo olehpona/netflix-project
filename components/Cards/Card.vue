@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
     <div class="w-96 h-48 relative shrink-0 rounded-lg flex justify-center items-center">
         <div class="w-full h-full">
-            <img class="w-full rounded-lg h-full object-fill" :src="imgUrl + '?url'">
+            <NuxtImg class="w-full rounded-lg h-full object-fill" :src="imgUrl"/>
         </div>
         <div class="card__detail absolute top-0 left-0 opacity-0 hover:opacity-100  duration-500 flex w-96 justify-between p-4 h-48">
             <div class="flex w-10 h-full space-y-4 flex-col">

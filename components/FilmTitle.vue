@@ -16,7 +16,7 @@ const props = defineProps({
 <template>
     <div class="flex relative w-full h-full items-center">
         <div class="h-full w-[60%]">
-            <img class="h-full w-full object-cover" :src="'/' + imgName + '?url'">
+            <NuxtImg class="h-full w-full object-cover" :src="'/' + imgName"/>
         </div>
         <div
             class="absolute w-full h-full main__film__title__text text-white flex justify-end items-center">

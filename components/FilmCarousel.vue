@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps();
 
-const id = useState("carouselElement", () => 0)
+const id = ref(0)
 
 const data = [
 {
