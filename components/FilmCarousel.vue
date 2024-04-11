@@ -38,15 +38,15 @@ function moveBackward() {
         id.value--;
     }
 }
-setInterval(() => {
-    moveForward();
-}, 5000)
-
-
+onMounted(()=>{
+    setInterval(() => {
+        moveForward();
+    }, 5000)
+})
 </script>
 
 <template>
-    <div id="filmCarousel" class="w-full flex flex-col items-center h-[60%]">
+    <div id="filmCarousel" class="w-full flex shrink-0 flex-col items-center h-[60%]">
         <FilmTitle :title="data[id].title" :text="data[id].text" :imgName="data[id].imgName"/>
         <div class="w-full h-[60%] absolute flex justify-between items-center px-8">
             <ButtonsCarouselArrowButton @click="moveBackward"></ButtonsCarouselArrowButton>

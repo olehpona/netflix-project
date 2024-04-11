@@ -5,7 +5,7 @@
 <template>
   <div class="h-full w-full flex flex-col">
     <NavBar />
-    <NuxtPage class="w-full grow-1" />
+    <NuxtPage class="w-full grow"/>
   </div>
 </template>
 

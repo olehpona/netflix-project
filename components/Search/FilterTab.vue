@@ -41,7 +41,7 @@ function getState(id) {
 
 <template>
     <div class="w-1/4 bg-[#121212] h-full rounded-lg">
-        <ElementGroup title="Genre">
+        <ElementGroup title="Genre" :default="true">
             <div class="w-full space-x-3 flex items-center justify-start flex-wrap shrink-0 overflow-hidden duration-300 h-full"
                 >
                 <ButtonsSearchCategoryButton v-for="(item, index) in state" @click="() => { changeState(index) }"
